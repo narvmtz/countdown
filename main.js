@@ -18,7 +18,7 @@ let timer = setInterval(function () {
 
   // Display the result in the element with id="demo"
   document.getElementById("gigiDay").innerHTML =
-    hoursBday + "h " + minutesBday + "m " + secondsBday + "s ";
+    (`${hoursBday} h ${minutesBday} m ${secondsBday} s`);
 
   // If the count down is finished, write some text
   if (distanceBday <= 0) {
