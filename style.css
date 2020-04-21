@@ -1,0 +1,10 @@
+h1, p {
+  text-align: center;
+  font-size: 7rem;
+  font-family: 'Sacramento', cursive, sans-serif;
+  color: chocolate;
+  text-shadow: 3px 3px 3px floralwhite; 
+}
+body{
+  background:linear-gradient(to right, pink, paleturquoise)
+}
