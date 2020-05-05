@@ -1,4 +1,4 @@
-This is a Birthday Countdown made like a little project for a friend :D
+This is a little project :D
 
 
-To see it click here -> https://gigi-bday.now.sh/
+To see it click here https://countdown-for-us.now.sh/
