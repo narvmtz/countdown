@@ -23,19 +23,14 @@ let timer = setInterval(() => {
   );
 
   // Display the result in the element with id="demo"
-<<<<<<< HEAD
   document.getElementById("countdown").innerHTML =
     (`${daysDay} D ${hoursDay} h ${minutesDay} m ${secondsDay} s`);
-=======
-  document.getElementById("gigiDay").innerHTML =
-    (`${hoursBday} h ${minutesBday} m ${secondsBday} s`);
->>>>>>> 0d14f66fe3d2241b2a09feda37a6363d1ed8ce05
 
   // If the count down is finished, write some text
   if (distanceBday <= 0) {
     clearInterval(timer);
     document.getElementById("title").innerHTML = "🎉Today is the big day!🎉";
-    document.getElementById("countdown").innerHTML = "🎊Happy Aniversary!🎊 🎁";
+    document.getElementById("countdown").innerHTML = "🎊Happy!🎊 🎁";
   }
 }, 1000);
 
