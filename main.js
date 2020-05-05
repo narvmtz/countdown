@@ -1,7 +1,7 @@
 const gigiBirthday = new Date("Apr 22, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
-let timer = setInterval(function () {
+let timer = setInterval(() => {
   // Get todays date and time
   const now = new Date().getTime();
 
@@ -17,7 +17,7 @@ let timer = setInterval(function () {
   const secondsBday = Math.floor((distanceBday % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("gigiDay").innerHTML =
+  document.getElementById("countdown").innerHTML =
     (`${hoursBday} h ${minutesBday} m ${secondsBday} s`);
 
   // If the count down is finished, write some text
