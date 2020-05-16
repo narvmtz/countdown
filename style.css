@@ -16,6 +16,13 @@ h1, p {
   box-shadow: 1.5px 2px 3px 1.5px rgba(0.2, 0, 0.2, 0.2);
   /*background:linear-gradient(-59deg, pink, peachpuff)*/
 }
+hr{
+    border:0;
+    margin:0;
+    width:100%;
+    height:0.5px;
+    background:darksalmon
+}
 img{
   margin: 0 auto;
   max-width: 300px;
