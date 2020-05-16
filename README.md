@@ -1,4 +1,4 @@
-This is a little project :D
+To see this project deployed click here:
 
 
-To see it click here https://countdown-for-us.now.sh/
+https://countdown-for-us.now.sh/
