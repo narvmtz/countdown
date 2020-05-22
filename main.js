@@ -20,25 +20,33 @@ let myPicturesAfter = [
   "./images/after/undraw_together_j0gj.png",
 ];
 
-function showPictureAfter() {
-  let randomPicAfter = Math.floor(Math.random() * myPicturesAfter.length);
-  document.getElementById("myImage").src = myPicturesAfter[randomPicAfter];
+//Date for Countdown
+const date = "Mar 15, 2021 00: 00: 00";
+const countdown = new Date(date).getTime();
+
+//Dates for random picture
+let count = Date.parse(date);
+let time = Date.now();
+
+if (time >= count) {
+  //random function to show a picture
+  function showPictureAfter() {
+    let randomPicAfter = Math.floor(Math.random() * myPicturesAfter.length);
+    document.getElementById("myImage").src = myPicturesAfter[randomPicAfter];
+  };
+
+  window.onload = showPictureAfter();
+}
+else { 
+  //random function to show a picture
+  function showPictureBefore() {
+    let randomPicBefore = Math.floor(Math.random() * myPicturesBefore.length);
+    document.getElementById("myImage").src = myPicturesBefore[randomPicBefore];
+  };
+
+  //random picture generator on refresh
+  window.onload = showPictureBefore();
 };
-  
-//random picture generator on refresh
-//window.onload = showPictureAfter();
-
-//random function to show a picture
-function showPictureBefore() {
-  let randomPicBefore = Math.floor(Math.random() * myPicturesBefore.length);
-  document.getElementById("myImage").src = myPicturesBefore[randomPicBefore];
-};
-
-//random picture generator on refresh
-//window.onload = showPictureBefore();
-
-//Countdown
-const countdown = new Date("Mar 15, 2021 00: 00: 00").getTime();
 
 // Update the count down every second
 let timer = setInterval(() => {
@@ -79,12 +87,11 @@ let timer = setInterval(() => {
   }
   //Else show the countdown
   else { 
-    window.onload = showPictureBefore();
+    //window.onload = showPictureBefore();
     //Show the countdown
     document.getElementById('day').innerHTML = day;
     document.getElementById('hour').innerHTML = hour;
     document.getElementById('min').innerHTML = min;
     document.getElementById('sec').innerHTML = sec;
-  }
+  };
 }, 1000);
-
