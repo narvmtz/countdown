@@ -1,4 +1,4 @@
-const countdown = new Date("Mar 15, 2021 00:00:00").getTime();
+const countdown = new Date("Mar 15, 2021 00: 00: 00").getTime();
 
 // Update the count down every second
 let timer = setInterval(() => {
