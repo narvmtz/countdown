@@ -1,5 +1,5 @@
-//Array of pictures to choose
-let myPicturesBefore = [
+//Array of pictures for random
+const myPicturesBefore = [
   "./images/undraw_hooked_c757.png",
   "./images/undraw_in_love_3dcq.png",
   "./images/undraw_intense_feeling_ft9s.png",
@@ -8,8 +8,7 @@ let myPicturesBefore = [
   "./images/undraw_super_thank_you_obwk.png",
   "./images/undraw_with_love_ajy1.png"
 ];
-
-let myPicturesAfter = [
+const myPicturesAfter = [
   "./images/after/undraw_buddies_tb1l.png",
   "./images/after/undraw_forever_5ag7.png",
   "./images/after/undraw_love_is_in_the_air_4mmc.png",
@@ -25,9 +24,10 @@ const date = "Mar 15, 2021 00: 00: 00";
 const countdown = new Date(date).getTime();
 
 //Dates for random picture
-let count = Date.parse(date);
-let time = Date.now();
+const count = Date.parse(date);
+const time = Date.now();
 
+//Update the picture with every refresh
 if (time >= count) {
   //random function to show a picture
   function showPictureAfter() {
