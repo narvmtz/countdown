@@ -1,3 +1,43 @@
+//Array of pictures to choose
+let myPicturesBefore = [
+  "./images/undraw_hooked_c757.png",
+  "./images/undraw_in_love_3dcq.png",
+  "./images/undraw_intense_feeling_ft9s.png",
+  "./images/undraw_Jogging_t14q.png",
+  "./images/undraw_pleasant_surprise_5sjy.png",
+  "./images/undraw_super_thank_you_obwk.png",
+  "./images/undraw_with_love_ajy1.png"
+];
+
+let myPicturesAfter = [
+  "./images/after/undraw_buddies_tb1l.png",
+  "./images/after/undraw_forever_5ag7.png",
+  "./images/after/undraw_love_is_in_the_air_4mmc.png",
+  "./images/after/undraw_love_xfcv.png",
+  "./images/after/undraw_pure_love_ay8a.png",
+  "./images/after/undraw_running_wild_ni0y.png",
+  "./images/after/undraw_special_event_4aj8.png",
+  "./images/after/undraw_together_j0gj.png",
+];
+
+function showPictureAfter() {
+  let randomPicAfter = Math.floor(Math.random() * myPicturesAfter.length);
+  document.getElementById("myImage").src = myPicturesAfter[randomPicAfter];
+};
+  
+//random picture generator on refresh
+//window.onload = showPictureAfter();
+
+//random function to show a picture
+function showPictureBefore() {
+  let randomPicBefore = Math.floor(Math.random() * myPicturesBefore.length);
+  document.getElementById("myImage").src = myPicturesBefore[randomPicBefore];
+};
+
+//random picture generator on refresh
+//window.onload = showPictureBefore();
+
+//Countdown
 const countdown = new Date("Mar 15, 2021 00: 00: 00").getTime();
 
 // Update the count down every second
@@ -30,13 +70,17 @@ let timer = setInterval(() => {
 
   // If the count down is finished, write some text
   if (distanceDay <= 0) {
+    //Clear the countdown
     clearInterval(timer);
+    //Reset the message
     document.getElementById("title").innerHTML = "🎉Today is the big day!🎉";
     document.getElementById("firstPara").innerHTML = "Let's celebrate";
     document.getElementById("secondPara").innerHTML = "🎁 🎊 We're together now! 🎊 🎁"
   }
   //Else show the countdown
   else { 
+    window.onload = showPictureBefore();
+    //Show the countdown
     document.getElementById('day').innerHTML = day;
     document.getElementById('hour').innerHTML = hour;
     document.getElementById('min').innerHTML = min;
