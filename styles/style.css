@@ -66,6 +66,9 @@ img{
   width: 310px;
   height: 270px;
 }
+.footer{
+  padding:1rem 0 0;
+}
 
 .footer p{
   font-size: small;
