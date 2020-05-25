@@ -29,16 +29,17 @@ const time = Date.now();
 
 //Update the picture with every refresh
 if (time >= count) {
-  //random function to show a picture
+  //random function to show a random picture after the setted time is over 
   function showPictureAfter() {
     let randomPicAfter = Math.floor(Math.random() * myPicturesAfter.length);
     document.getElementById("myImage").src = myPicturesAfter[randomPicAfter];
   };
 
+  //random picture generator on refresh
   window.onload = showPictureAfter();
 }
 else { 
-  //random function to show a picture
+  //random function to show a random picture before the setted time is over
   function showPictureBefore() {
     let randomPicBefore = Math.floor(Math.random() * myPicturesBefore.length);
     document.getElementById("myImage").src = myPicturesBefore[randomPicBefore];
@@ -56,7 +57,7 @@ let timer = setInterval(() => {
   // Find the distance between now and the countdown date
   const distanceDay = countdown - now;  
 
-  // Time calculations for  hours, minutes and seconds
+  // Time calculations for days, hours, minutes and seconds
   const daysDay = Math.floor(
     distanceDay / (1000 * 60 * 60 * 24)
   );
