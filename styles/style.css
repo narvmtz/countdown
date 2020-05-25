@@ -10,15 +10,15 @@ body{
   padding: 0;
 }
 
-ul {
+.ul-nav{
   margin: 0 0 2rem;
-  padding: 0;
+  padding: 0.2rem;
   list-style-type: none;
   overflow: hidden;
   background-color:gray;
 }
 
-li a {
+li a{
   display: flex;
   flex-direction: column;
   color: white;
@@ -28,23 +28,27 @@ li a {
   font-weight: 700;
 }
 
-li a:hover {
+li a:hover{
   color: #7a3c06;
   background-color: #faebd7;
   border-radius: 4px;
 }
 
-h1, p {
+h1, p{
   text-align: center;
   font-size: 1.3rem;
   color: chocolate;
   /*text-shadow: 3px 3px 3px floralwhite; */
 }
 
-.container{
+.container, .fieldset{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.fieldset{
+  border: none; 
 }
 
 .input-date{
