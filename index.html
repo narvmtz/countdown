@@ -11,28 +11,31 @@
 
 <body>
   <header>
-    <div class="navbar">
-      <nav class="top-nav">
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="./card.html">Card</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar top-nav">
+      <ul class="ul-nav">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="./card.html">Card</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="container">
-    <div class="input-date">
-      <label for="date">Please choose a date:</label>
-      <input type="date" name="date" id="date" class="date">
-      <input type="button" value="submit" class="button">
-    </div>
+    <form action="" class="input-date dateIn">
+      <fieldset class="fieldset">
+        <label for="date">Please choose a date:</label>
+        <input type="date" name="date" id="dateInput" class="date">
+      </fieldset>
+      <fieldset class="fieldset">
+        <input type="button" value="Submit" class="button">
+      </fieldset>
+    </form>
+
     <!--    <div class="card">
       <div class="image">
         <img src="" alt="in love image" id="myImage">
@@ -49,7 +52,7 @@
   <footer class="footer">
     <p>Coded with ❤️ by <a href="https://twitter.com/narvqzmtz" target="_blank">Nar</a>.</p>
   </footer>
-  <script src="main.js"></script>
+  <script src="./JS/main.js"></script>
 </body>
 
 </html>
