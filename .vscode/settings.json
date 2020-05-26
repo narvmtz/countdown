@@ -1,0 +1,7 @@
+{
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.withNodeModules": true,
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true
+}
