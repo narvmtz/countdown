@@ -3,5 +3,6 @@
   "prettier.singleQuote": true,
   "prettier.withNodeModules": true,
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true
 }
