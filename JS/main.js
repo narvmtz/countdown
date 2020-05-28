@@ -21,9 +21,8 @@ const myPicturesAfter = [
 
 //Date for Countdown
 const date = "Mar 15, 2021 00: 00: 00";
-const countdown = new Date(date).getTime();
+let countdown = new Date(date).getTime();
 
-//Dates for random picture
 const count = Date.parse(date);
 const time = Date.now();
 
@@ -38,7 +37,7 @@ if (time >= count) {
   //random picture generator on refresh
   window.onload = showPictureAfter();
 }
-else { 
+else {
   //random function to show a random picture before the setted time is over
   function showPictureBefore() {
     let randomPicBefore = Math.floor(Math.random() * myPicturesBefore.length);
@@ -55,7 +54,7 @@ let timer = setInterval(() => {
   const now = new Date().getTime();
 
   // Find the distance between now and the countdown date
-  const distanceDay = countdown - now;  
+  const distanceDay = countdown - now;
 
   // Time calculations for days, hours, minutes and seconds
   const daysDay = Math.floor(
@@ -87,7 +86,7 @@ let timer = setInterval(() => {
     document.getElementById("secondPara").innerHTML = "🎁 🎊 We're together now! 🎊 🎁"
   }
   //Else show the countdown
-  else { 
+  else {
     //window.onload = showPictureBefore();
     //Show the countdown
     document.getElementById('day').innerHTML = day;
