@@ -1,4 +1,5 @@
-To see this project deployed click here:
+Project in progress.
 
 
-https://our-countdown.now.sh/
+
+Deployed at: https://our-countdown.now.sh/
